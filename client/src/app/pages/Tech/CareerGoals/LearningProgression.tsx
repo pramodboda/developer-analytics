@@ -144,7 +144,10 @@ export default function LearningProgression() {
                                         {completedSteps === totalSteps - 1 ? 'Finish' : 'Complete Step'}
                                     </Button>
                                 ))}
+
+
                         </Box>
+                        Don't try to learn all of these simultaneously. That's exactly the kind of thing that can make your preparation feel overwhelming.
                     </React.Fragment>
                 )}
             </div>
