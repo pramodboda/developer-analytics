@@ -18,7 +18,7 @@ import Button from '@mui/material/Button';
 import { Outlet } from "react-router-dom";
 
 import { Link } from "react-router-dom";
-import { ROUTES } from "../../app/router/routes";
+import { ROUTES } from "../../router/routes";
 
 // import Home from "../../pages/Home/Home";
 
