@@ -24,12 +24,12 @@ const router = createBrowserRouter([
                 children: [
                   
                     {
-                      path: "ui-guidelines",
+                      path: "/ui-guidelines",
                       element: <UIGuidelines />,
                     },
                    
                   ],
-            }
+            },
             //   {
             //     path: "/dashboard",
             //     element: <DashboardPage />,
@@ -38,6 +38,11 @@ const router = createBrowserRouter([
             //     path: "/projects",
             //     element: <ProjectsPage />,
             //   },
+
+            {
+                path: "*",
+                element: <NotFoundPage />,
+            },
         ],
     },
 
