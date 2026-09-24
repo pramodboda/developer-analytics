@@ -14,7 +14,7 @@ const steps = ['JavaScript', 'React', 'TypeScript', 'Node.js + Express', 'REST A
 
 
 
-export default function LearningProgression() {
+export default function InterviewPrepPlan() {
     const [activeStep, setActiveStep] = React.useState(0);
     const [completed, setCompleted] = React.useState<{
         [k: number]: boolean;

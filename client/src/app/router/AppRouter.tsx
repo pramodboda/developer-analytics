@@ -6,7 +6,7 @@ import { MainLayout } from "../layouts/MainLayout";
 // import { AuthLayout } from "../../layouts/AuthLayout";
 
 import HomePage from "../pages/Home/HomePage";
-import CareerGoals from "../pages/Tech/CareerGoals/CareerGoals";
+import CareerGoalsLayout from "../pages/Tech/CareerGoals/CareerGoalsLayout";
 import UIGuidelines from "../pages/UIGuidelines/UIGuidelinesPage";
 // import { LoginPage } from "../../pages/Login/LoginPage";
 import NotFoundPage from "../pages/NotFound/NotFoundPage";
