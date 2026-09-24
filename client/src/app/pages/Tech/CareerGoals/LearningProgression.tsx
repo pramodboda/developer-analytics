@@ -6,7 +6,10 @@ import StepButton from '@mui/material/StepButton';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const steps = ['JavaScript', 'React', 'TypeScript', 'Node', '', '', '', '', '', '', ''];
+const steps = ['JavaScript', 'React', 'TypeScript', 'Node.js + Express', 'REST APIs', 'PostgreSQL + Prisma', 'JWT/ Authentication / Authorization', 'Testing', 'Docker', 'Production architecture', 'Deployment', 'Modular Monolith', 'Building Microservices', 'RabbitMQ / Kafka', 'Redis', 'API Gateway', 'Kubernetes', 'Cloud / AWS'];
+
+
+
 
 export default function LearningProgression() {
     const [activeStep, setActiveStep] = React.useState(0);
@@ -116,7 +119,7 @@ export default function LearningProgression() {
                 ) : (
                     <React.Fragment>
                         <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
-                            Step {activeStep + 1}
+                            Skill {activeStep + 1}
                         </Typography>
                         <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                             <Button
@@ -150,36 +153,3 @@ export default function LearningProgression() {
 }
 
 
-// export default function LearningProgression() {
-
-//     return (<>
-
-//         React
-//         ↓
-//         TypeScript
-//         ↓
-//         Node.js
-//         ↓
-//         Express
-//         ↓
-//         REST APIs
-//         ↓
-//         PostgreSQL
-//         ↓
-//         Prisma
-//         ↓
-//         Authentication / Authorization
-//         ↓
-//         Testing
-//         ↓
-//         Docker
-//         ↓
-//         Deployment
-//         ↓
-//         Modular Monolith
-//         ↓
-//         Microservices
-
-//     </>)
-
-// }
