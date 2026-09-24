@@ -21,11 +21,11 @@ interface NavItem {
             children: [
               {
                 linkName: "Brand Colors",
-                link: "/ui-guidelines/colors/brand",
+                link: "/proui/colors/brand",
               },
               {
                 linkName: "Semantic Colors",
-                link: "/ui-guidelines/colors/semantic",
+                link: "/proui/colors/semantic",
               },
             ],
           },
