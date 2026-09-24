@@ -9,11 +9,10 @@ export default function DataCard({ title, children }) {
             <CardContent>
                 <Typography variant="h6" sx={{ mb: 2 }}>{title}</Typography>
 
-                {children}</CardContent>
-
+                {children}
+            </CardContent>
         </Card>
-
-    );
+    )
 }
 
 
