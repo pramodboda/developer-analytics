@@ -19,12 +19,12 @@ const router = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path:"/proui",
+                path:"proui",
                 // element:<></>,
                 children: [
                   
                     {
-                      path: "/ui-guidelines",
+                      path: "ui-guidelines",
                       element: <UIGuidelines />,
                     },
                    
