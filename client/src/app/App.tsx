@@ -4,14 +4,14 @@ import { useState } from 'react'
 // import viteLogo from '../assets/vite.svg'
 import './App.css'
 
-import DeveloperLayout from "../layouts/DashboardLayout/DashboardLayout"
+import DeveloperAnalytics from "../dashboard/DeveloperAnalytics/DeveloperAnalytics"
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <DeveloperLayout/>
+      <DeveloperAnalytics/>
     </>
   )
 }
