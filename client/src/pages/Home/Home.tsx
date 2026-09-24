@@ -1,7 +1,7 @@
-import DeveloperAnalytics from "../../dashboards/DeveloperAnalytics/DeveloperAnalytics";
+// import DeveloperAnalytics from "../../dashboards/DeveloperAnalytics/DeveloperAnalytics";
 
 const Home = () => {
-    return(<DeveloperAnalytics/>)
+    return(<>Home</>)
 }
 
 export default Home;

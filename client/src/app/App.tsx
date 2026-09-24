@@ -7,7 +7,6 @@ import './App.css'
 import DeveloperAnalytics from "../dashboard/DeveloperAnalytics/DeveloperAnalytics"
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
