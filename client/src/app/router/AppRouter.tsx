@@ -6,6 +6,7 @@ import { MainLayout } from "../layouts/MainLayout";
 // import { AuthLayout } from "../../layouts/AuthLayout";
 
 import HomePage from "../pages/Home/HomePage";
+import CareerGoals from "../pages/Tech/CareerGoals/CareerGoals";
 import UIGuidelines from "../pages/UIGuidelines/UIGuidelinesPage";
 // import { LoginPage } from "../../pages/Login/LoginPage";
 import NotFoundPage from "../pages/NotFound/NotFoundPage";
@@ -19,16 +20,28 @@ const router = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path:"proui",
+                path: "tech",
+                // element:<TechLayout />,
+                children: [
+
+                    {
+                        path: "career-goals",
+                        element: <CareerGoals />,
+                    },
+
+                ],
+            },
+            {
+                path: "proui",
                 // element:<ProUILayout />,
                 children: [
-                  
+
                     {
-                      path: "ui-guidelines",
-                      element: <UIGuidelines />,
+                        path: "ui-guidelines",
+                        element: <UIGuidelines />,
                     },
-                   
-                  ],
+
+                ],
             },
             //   {
             //     path: "/dashboard",

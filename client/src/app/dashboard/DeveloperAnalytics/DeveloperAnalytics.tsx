@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 import { ROUTES } from "../../router/routes";
 
 import RecursiveMenu from "../../components/ProUI/RecursiveMenu/RecursiveMenu";
-import {navItems} from "../../data/navItems";
+import { navItems } from "../../data/navItems";
 
 interface Props {
   /**
@@ -62,12 +62,12 @@ export default function DeveloperAnalytics(props: Props) {
           </ListItem>
         ))}
       </List> */}
-       <Divider />
+      <Divider />
 
-<RecursiveMenu
-  items={navItems}
-  onNavigate={handleDrawerToggle}
-/>
+      <RecursiveMenu
+        items={navItems}
+        onNavigate={handleDrawerToggle}
+      />
     </Box>
   );
 
@@ -76,14 +76,14 @@ export default function DeveloperAnalytics(props: Props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{background: "#f9f9f9", color: "#1e1e1e"}}>
+      <AppBar component="nav" sx={{ background: "#f9f9f9", color: "#1e1e1e" }}>
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2}}
+            sx={{ mr: 2 }}
           >
             <MenuIcon />
           </IconButton>
@@ -113,7 +113,7 @@ export default function DeveloperAnalytics(props: Props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >
@@ -123,7 +123,7 @@ export default function DeveloperAnalytics(props: Props) {
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
 
-        <main><Outlet/></main>
+        <main><Outlet /></main>
       </Box>
     </Box>
   );

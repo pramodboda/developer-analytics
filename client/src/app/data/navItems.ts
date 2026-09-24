@@ -10,6 +10,15 @@ export const navItems: NavItem[] = [
     link: "/",
   },
   {
+    linkName: "Tech",
+    children: [
+      {
+        linkName: "Career Goals",
+        link: "/tech/career-goals",
+      },
+    ],
+  },
+  {
     linkName: "Pro UI",
     children: [
       {
