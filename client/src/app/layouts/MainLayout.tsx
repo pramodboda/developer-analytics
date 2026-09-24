@@ -7,8 +7,6 @@ export function MainLayout() {
   return (
     <div className="app-layout">
       <DeveloperAnalytics />
-
-
     </div>
   );
 }
