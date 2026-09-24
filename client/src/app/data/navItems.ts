@@ -14,7 +14,7 @@ interface NavItem {
       children: [
         {
           linkName: "UI Guidelines",
-          link: "ui-guidelines",
+          link: "/proui/ui-guidelines",
         },
         {
             linkName: "Colors",
