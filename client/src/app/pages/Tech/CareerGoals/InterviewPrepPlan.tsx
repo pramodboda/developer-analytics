@@ -13,7 +13,6 @@ const steps = ['HR/Call Round', 'DSA 1-3 Problems', 'JavaScript Concepts', 'Reac
 
 
 
-
 export default function InterviewPrepPlan() {
     const [activeStep, setActiveStep] = React.useState(0);
     const [completed, setCompleted] = React.useState<{
