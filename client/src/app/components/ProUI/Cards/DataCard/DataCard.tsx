@@ -7,7 +7,7 @@ export default function DataCard({ title, children }) {
     return (
         <Card>
             <CardContent>
-                <Typography variant="h5">{title}</Typography>
+                <Typography variant="h6" sx={{ mb: 2 }}>{title}</Typography>
 
                 {children}</CardContent>
 
