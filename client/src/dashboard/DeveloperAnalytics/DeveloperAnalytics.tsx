@@ -14,7 +14,13 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
-import Home from "../../pages/Home/Home";
+
+import { Outlet } from "react-router-dom";
+
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../app/router/routes";
+
+// import Home from "../../pages/Home/Home";
 
 interface Props {
   /**
@@ -104,7 +110,10 @@ export default function DeveloperAnalytics(props: Props) {
       </nav>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-       <Home/>
+
+        <main><Outlet/></main>
+      
+       {/* <Home/> */}
       </Box>
     </Box>
   );
