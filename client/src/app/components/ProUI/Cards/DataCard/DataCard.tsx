@@ -1,11 +1,16 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
-
-export default function DataCard({ children }) {
+export default function DataCard({ title, children }) {
     return (
         <Card>
-            {children}
+            <CardContent>
+                <Typography variant="h5">{title}</Typography>
+
+                {children}</CardContent>
+
         </Card>
 
     );

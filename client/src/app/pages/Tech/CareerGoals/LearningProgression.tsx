@@ -92,7 +92,7 @@ export default function LearningProgression() {
     }, [activeStep]);
 
     return (
-        <DataCard>
+        <DataCard title="Learning Progression">
             <Box sx={{ width: '100%' }}>
                 <Stepper nonLinear activeStep={activeStep} orientation="vertical">
                     {steps.map((label, index) => (

@@ -92,7 +92,7 @@ export default function InterviewPrepPlan() {
     }, [activeStep]);
 
     return (
-        <DataCard>
+        <DataCard title="Interview Rounds">
             <Box sx={{ width: '100%' }}>
                 <Stepper nonLinear activeStep={activeStep} orientation="vertical">
                     {steps.map((label, index) => (

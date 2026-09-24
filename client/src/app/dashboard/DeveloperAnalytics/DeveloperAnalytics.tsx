@@ -123,7 +123,7 @@ export default function DeveloperAnalytics(props: Props) {
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
 
-        <main><Outlet /></main>
+        <Outlet />
       </Box>
     </Box>
   );
