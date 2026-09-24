@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "career-goals",
-                        element: <CareerGoals />,
+                        element: <CareerGoalsLayout />,
                     },
 
                 ],

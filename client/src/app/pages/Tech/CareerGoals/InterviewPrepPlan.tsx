@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import DataCard from "../../../components/ProUI/Cards/DataCard/DataCard";
 
 
-const steps = ['JavaScript', 'React', 'TypeScript', 'Node.js + Express', 'REST APIs', 'PostgreSQL + Prisma', 'JWT/ Authentication / Authorization', 'Testing', 'Docker', 'Production architecture', 'Deployment', 'Modular Monolith', 'Building Microservices', 'RabbitMQ / Kafka', 'Redis', 'API Gateway', 'Kubernetes', 'Cloud / AWS'];
+const steps = ['HR/Call Round', 'DSA 1-3 Problems', 'JavaScript Concepts', 'React Concepts', 'JavaScript Coding Problems', 'React Coding Problems', 'Machine Coding Problems', 'Managerial Round'];
 
 
 
@@ -123,7 +123,7 @@ export default function InterviewPrepPlan() {
                     ) : (
                         <React.Fragment>
                             <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
-                                Skill {activeStep + 1}
+                                Round {activeStep + 1}: {steps[activeStep]}
                             </Typography>
                             <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                                 <Button
