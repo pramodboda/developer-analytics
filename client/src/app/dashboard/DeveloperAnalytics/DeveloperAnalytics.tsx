@@ -1,3 +1,5 @@
+// client/app/dashboard/DeveloperAnalytics/DeveloperAnalytics.tsx
+
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -17,10 +19,11 @@ import Button from '@mui/material/Button';
 
 import { Outlet } from "react-router-dom";
 
-// import { Link } from "react-router-dom";
-// import { ROUTES } from "../../router/routes";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../router/routes";
 
-// import Home from "../../pages/Home/Home";
+import RecursiveMenu from "../../components/ProUI/RecursiveMenu/RecursiveMenu";
+import {navItems} from "../../data/navItems";
 
 interface Props {
   /**
@@ -31,7 +34,10 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+// const navItems = [{linkName:'Home', link:"/"}, {linkName:'Pro UI', link:"/proui",children:[{linkName:'UI Guidelines', link:"/ui-guildlines"}]}];
+
+
+// const navItems = ['Home','Pro UI','UI Guidelines'];
 
 export default function DeveloperAnalytics(props: Props) {
   const { window } = props;
@@ -47,15 +53,21 @@ export default function DeveloperAnalytics(props: Props) {
         MUI
       </Typography>
       <Divider />
-      <List>
+      {/* <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+            <ListItemButton sx={{ textAlign: 'center' }} >
+              <ListItemText primary={item.linkName} />
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
+      </List> */}
+       <Divider />
+
+<RecursiveMenu
+  items={navItems}
+  onNavigate={handleDrawerToggle}
+/>
     </Box>
   );
 
@@ -82,13 +94,13 @@ export default function DeveloperAnalytics(props: Props) {
           >
             MUI
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          {/* <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
-          </Box>
+          </Box> */}
         </Toolbar>
       </AppBar>
       <nav>
@@ -111,9 +123,7 @@ export default function DeveloperAnalytics(props: Props) {
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
 
-        {/* <main><Outlet/></main> */}
-      Hylo
-       {/* <Home/> */}
+        <main><Outlet/></main>
       </Box>
     </Box>
   );

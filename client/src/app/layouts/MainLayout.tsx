@@ -1,7 +1,7 @@
 // layouts/MainLayout.tsx
 
 
-import { DeveloperAnalytics } from "../dashboard/DeveloperAnalytics/DeveloperAnalytics";
+import DeveloperAnalytics from "../dashboard/DeveloperAnalytics/DeveloperAnalytics";
 
 export function MainLayout() {
   return (

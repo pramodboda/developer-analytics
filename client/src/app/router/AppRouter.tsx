@@ -6,8 +6,7 @@ import { MainLayout } from "../layouts/MainLayout";
 // import { AuthLayout } from "../../layouts/AuthLayout";
 
 import HomePage from "../pages/Home/HomePage";
-// import { DashboardPage } from "../../pages/Dashboard/DashboardPage";
-// import { ProjectsPage } from "../../pages/Projects/ProjectsPage";
+import UIGuidelines from "../pages/UIGuidelines/UIGuidelinesPage";
 // import { LoginPage } from "../../pages/Login/LoginPage";
 import NotFoundPage from "../pages/NotFound/NotFoundPage";
 
@@ -19,6 +18,18 @@ const router = createBrowserRouter([
                 path: "/",
                 element: <HomePage />,
             },
+            {
+                path:"/proui",
+                element:<></>,
+                children: [
+                  
+                    {
+                      path: "ui-guidelines",
+                      element: <UIGuidelines />,
+                    },
+                   
+                  ],
+            }
             //   {
             //     path: "/dashboard",
             //     element: <DashboardPage />,
