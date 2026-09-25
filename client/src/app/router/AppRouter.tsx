@@ -1,15 +1,17 @@
 // app/router/AppRouter.tsx
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { lazy, Suspense } from "react";
+
 
 import { MainLayout } from "../layouts/MainLayout";
 // import { AuthLayout } from "../../layouts/AuthLayout";
 
-import HomePage from "../pages/Home/HomePage";
-import CareerGoalsLayout from "../pages/Tech/CareerGoals/CareerGoalsLayout";
-import UIGuidelines from "../pages/UIGuidelines/UIGuidelinesPage";
+const HomePage = lazy(() => import("../pages/Home/HomePage"));
+const CareerGoalsLayout = lazy(() => import("../pages/Tech/CareerGoals/CareerGoalsLayout"));
+const UIGuidelinesPage = lazy(() => import("../pages/UIGuidelines/UIGuidelinesPage"));
 // import { LoginPage } from "../../pages/Login/LoginPage";
-import NotFoundPage from "../pages/NotFound/NotFoundPage";
+const NotFoundPage = lazy(() => import("../pages/NotFound/NotFoundPage"));
 
 const router = createBrowserRouter([
     {
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <HomePage />,
+                element: <Suspense fallback={<div>Loading...</div>}><HomePage /></Suspense>,
             },
             {
                 path: "tech",
@@ -26,7 +28,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "career-goals",
-                        element: <CareerGoalsLayout />,
+                        element: <Suspense fallback={<div>Loading...</div>}><CareerGoalsLayout /></Suspense>,
                     },
 
                 ],
@@ -38,7 +40,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "ui-guidelines",
-                        element: <UIGuidelines />,
+                        element: <Suspense fallback={<div>Loading...</div>}><UIGuidelines /></Suspense>,
                     },
 
                 ],
@@ -54,7 +56,7 @@ const router = createBrowserRouter([
 
             {
                 path: "*",
-                element: <NotFoundPage />,
+                element: <Suspense fallback={<div>Loading...</div>}><NotFoundPage /></Suspense>,
             },
         ],
     },
@@ -71,7 +73,7 @@ const router = createBrowserRouter([
 
     {
         path: "*",
-        element: <NotFoundPage />,
+        element: <Suspense fallback={<div>Loading...</div>}><NotFoundPage /></Suspense>,
     },
 ]);
 
