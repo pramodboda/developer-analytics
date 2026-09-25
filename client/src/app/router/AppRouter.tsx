@@ -17,7 +17,7 @@ const NotFoundPage = lazy(() => import("../pages/NotFound/NotFoundPage"));
 // Custom LazyPage is a reusable lazy-page wrapper
 // ==================================================
 function LazyPage({ Component }: { Component: ComponentType }) {
-    return (<Suspense fallback={< div > Loading...</div>}></Suspense >)
+    return (<Suspense fallback={<div>Loading...</div>}></Suspense >)
 }
 
 const router = createBrowserRouter([
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <LazyPage Component={<HomePage />} />,
+                element: <LazyPage Component={HomePage} />,
             },
             {
                 path: "tech",
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "career-goals",
-                        element: <LazyPage Component={<CareerGoalsPage />} />,
+                        element: <LazyPage Component={CareerGoalsPage} />,
                     },
 
                 ],
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "ui-guidelines",
-                        element: <LazyPage Component={<UIGuidelinesPage />} />,
+                        element: <LazyPage Component={UIGuidelinesPage} />,
                     },
 
                 ],
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
 
             {
                 path: "*",
-                element: <LazyPage Component={<NotFoundPage />} />,
+                element: <LazyPage Component={NotFoundPage} />,
             },
         ],
     },
@@ -80,7 +80,7 @@ const router = createBrowserRouter([
 
     {
         path: "*",
-        element: <LazyPage Component={<NotFoundPage />} />,
+        element: <LazyPage Component={NotFoundPage} />,
     },
 ]);
 
