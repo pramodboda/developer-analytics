@@ -8,10 +8,17 @@ import { MainLayout } from "../layouts/MainLayout";
 // import { AuthLayout } from "../../layouts/AuthLayout";
 
 const HomePage = lazy(() => import("../pages/Home/HomePage"));
-const CareerGoalsLayout = lazy(() => import("../pages/Tech/CareerGoals/CareerGoalsLayout"));
+const CareerGoalsPage = lazy(() => import("../pages/Tech/CareerGoals/CareerGoalsPage"));
 const UIGuidelinesPage = lazy(() => import("../pages/UIGuidelines/UIGuidelinesPage"));
 // import { LoginPage } from "../../pages/Login/LoginPage";
 const NotFoundPage = lazy(() => import("../pages/NotFound/NotFoundPage"));
+
+// ==================================================
+// Custom LazyPage is a reusable lazy-page wrapper
+// ==================================================
+function LazyPage({ Component }: { Component: ComponentType }) {
+    return (<Suspense fallback={< div > Loading...</div>}></Suspense >)
+}
 
 const router = createBrowserRouter([
     {
@@ -19,7 +26,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Suspense fallback={<div>Loading...</div>}><HomePage /></Suspense>,
+                element: <LazyPage Component={<HomePage />} />,
             },
             {
                 path: "tech",
@@ -28,7 +35,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "career-goals",
-                        element: <Suspense fallback={<div>Loading...</div>}><CareerGoalsLayout /></Suspense>,
+                        element: <LazyPage Component={<CareerGoalsPage />} />,
                     },
 
                 ],
@@ -40,7 +47,7 @@ const router = createBrowserRouter([
 
                     {
                         path: "ui-guidelines",
-                        element: <Suspense fallback={<div>Loading...</div>}><UIGuidelines /></Suspense>,
+                        element: <LazyPage Component={<UIGuidelinesPage />} />,
                     },
 
                 ],
@@ -56,7 +63,7 @@ const router = createBrowserRouter([
 
             {
                 path: "*",
-                element: <Suspense fallback={<div>Loading...</div>}><NotFoundPage /></Suspense>,
+                element: <LazyPage Component={<NotFoundPage />} />,
             },
         ],
     },
@@ -73,7 +80,7 @@ const router = createBrowserRouter([
 
     {
         path: "*",
-        element: <Suspense fallback={<div>Loading...</div>}><NotFoundPage /></Suspense>,
+        element: <LazyPage Component={<NotFoundPage />} />,
     },
 ]);
 
