@@ -8,6 +8,7 @@
     position: relative;
     background: var(--color-1);
     box-sizing: border-box;
+    border-radius: 2px;
     animation: flipX 0.8s linear infinite;
   }
   

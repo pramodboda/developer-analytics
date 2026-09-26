@@ -11,6 +11,7 @@ export default function PageLoader() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            zIndex: 9999,
         }}
     >
         <span className="loader"></span>
