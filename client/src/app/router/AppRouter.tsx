@@ -162,10 +162,7 @@ const router = createBrowserRouter([
 ]);
 
 export function AppRouter() {
-    return
-    <Suspense fallback={<>Loading....</>}>
-        <RouterProvider router={router} />;
-
-    </Suspense>
-
+    return (<Suspense fallback={<>Loading....</>}>
+        <RouterProvider router={router} />
+    </Suspense>);
 }
