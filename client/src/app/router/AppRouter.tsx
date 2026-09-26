@@ -1,8 +1,10 @@
 // app/router/AppRouter.tsx
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { lazy, Suspense } from "react";
 
+import PageLoader from "../components/ProUI/PageLoader/PageLoader";
 
 import { MainLayout } from "../layouts/MainLayout";
 // import { AuthLayout } from "../../layouts/AuthLayout";
@@ -103,7 +105,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <HomePage />,
+                // element: <HomePage />,
+                element: <PageLoader />,
             },
             {
                 path: "tech",
@@ -155,14 +158,14 @@ const router = createBrowserRouter([
     //     ],
     //   },
 
-    {
-        path: "*",
-        element: <NotFoundPage />,
-    },
+    // {
+    //     path: "*",
+    //     element: <NotFoundPage />,
+    // },
 ]);
 
 export function AppRouter() {
-    return (<Suspense fallback={<>Loading....</>}>
+    return (<Suspense fallback={<PageLoader />}>
         <RouterProvider router={router} />
     </Suspense>);
 }
