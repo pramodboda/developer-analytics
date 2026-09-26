@@ -11,7 +11,7 @@ const HomePage = lazy(() => import("../pages/Home/HomePage"));
 const CareerGoalsPage = lazy(() => import("../pages/Tech/CareerGoals/CareerGoalsPage"));
 const UIGuidelinesPage = lazy(() => import("../pages/UIGuidelines/UIGuidelinesPage"));
 // import { LoginPage } from "../../pages/Login/LoginPage";
-const NotFoundPage = lazåçy(() => import("../pages/NotFound/NotFoundPage"));
+const NotFoundPage = lazy(() => import("../pages/NotFound/NotFoundPage"));
 
 
 // // ==================================================
@@ -90,12 +90,12 @@ const NotFoundPage = lazåçy(() => import("../pages/NotFound/NotFoundPage"));
 // }
 
 
-// ==================================================
-// Custom LazyPage is a reusable lazy-page wrapper
-// ==================================================
-function LazyPage({ Component }: { Component: ComponentType }) {
-    return (<Suspense fallback={<div>Loading...</div>}></Suspense >)
-}
+// // ==================================================
+// // Custom LazyPage is a reusable lazy-page wrapper
+// // ==================================================
+// function LazyPage({ Component }: { Component: ComponentType }) {
+//     return (<Suspense fallback={<div>Loading...</div>}></Suspense >)
+// }
 
 const router = createBrowserRouter([
     {
@@ -162,5 +162,10 @@ const router = createBrowserRouter([
 ]);
 
 export function AppRouter() {
-    return <RouterProvider router={router} />;
+    return
+    <Suspense fallback={<>Loading....</>}>
+        <RouterProvider router={router} />;
+
+    </Suspense>
+
 }
