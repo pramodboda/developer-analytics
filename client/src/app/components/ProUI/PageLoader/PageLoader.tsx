@@ -12,7 +12,7 @@ export default function PageLoader() {
             alignItems: "center",
             justifyContent: "center",
             zIndex: 9999,
-            backgroundColor: "rgba(225,225,225,0.5)"
+            backgroundColor: "rgba(225,225,225,0.8)"
         }}
     >
         <span className="loader"></span>
