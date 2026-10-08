@@ -1,75 +1,92 @@
 export const interviewKitData = [
 
     {
-        round_name: 'HR/Call Round',
+        topic_name: 'HR/Call Round',
+        isReadyForLongNotesPrint: false,
+        isReadyForShortNotesPrint: false,
+        isBothReadyForPrint: true,
+        progress:"",
+        isReadyForInterview: true
+    },
+    {
+        topic_name: 'DSA 1-3 Problems',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     },
     {
-        round_name: 'DSA 1-3 Problems',
+        topic_name: 'JavaScript Concepts',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     },
     {
-        round_name: 'JavaScript Concepts',
+        topic_name: 'React Concepts',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     },
     {
-        round_name: 'React Concepts',
+        topic_name: 'JavaScript Coding Problems',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     },
     {
-        round_name: 'JavaScript Coding Problems',
+        topic_name: 'React Coding Problems',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     },
     {
-        round_name: 'React Coding Problems',
+        topic_name: 'Machine Coding Problems',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     },
     {
-        round_name: 'Machine Coding Problems',
+        topic_name: 'Managerial Round',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
-        isReadyForInterview: false
-    },
-    {
-        round_name: 'Managerial Round',
-        isReadyForLongNotesPrint: false,
-        isReadyForShortNotesPrint: false,
-        isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     },
 
     {
-        round_name: 'Resume(ATS)',
+        topic_name: 'Resume(ATS)',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
-    }
-    ,
+    },
     {
-        round_name: 'Top 10 Portfolio Projects',
+        topic_name: 'Top 10 Portfolio Projects',
         isReadyForLongNotesPrint: false,
         isReadyForShortNotesPrint: false,
         isBothReadyForPrint: false,
+        progress:"2 Projects completed",
+        isReadyForInterview: false
+    },
+    {
+        topic_name: 'Portfolio Website',
+        isReadyForLongNotesPrint: false,
+        isReadyForShortNotesPrint: false,
+        isBothReadyForPrint: false,
+        progress:"",
         isReadyForInterview: false
     }
 ]

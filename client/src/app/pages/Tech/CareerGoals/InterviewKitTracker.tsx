@@ -68,22 +68,24 @@ export default function InterviewKitTracket() {
                             <TableCell align="right">Long Notes Print</TableCell>
                             <TableCell align="right">Short Notes Print</TableCell>
                             <TableCell align="right">Both Ready For Print</TableCell>
+                            <TableCell align="right">Progress</TableCell>
                             <TableCell align="right">Ready For Interview ?</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {interviewKitData?.map((row) => (
                             <TableRow
-                                key={row.round_name}
+                                key={row.topic_name}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
                                 <TableCell component="th" scope="row">
-                                    {row.round_name}
+                                    {row.topic_name}
                                 </TableCell>
                                 <TableCell align="right">{row.calories}</TableCell>
                                 <TableCell align="right">{row.fat}</TableCell>
                                 <TableCell align="right">{row.carbs}</TableCell>
-                                <TableCell align="right">{row.isReadyForInterview}</TableCell>
+                                <TableCell align="right">{row.progress}</TableCell>
+                                <TableCell align="right">{row.isReadyForInterview?"Ready":"Not Ready"}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
