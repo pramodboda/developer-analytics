@@ -6,7 +6,7 @@ import "./Loader.css";
 export default function ComponentLoader() {
     return (<Box
         sx={{
-            position: "fixed",
+            position: "absolute",
             inset: 0,
             display: "flex",
             alignItems: "center",
