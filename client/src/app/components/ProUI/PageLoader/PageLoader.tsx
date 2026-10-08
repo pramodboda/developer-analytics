@@ -13,16 +13,16 @@ export default function PageLoader() {
             // justifyContent: "center",
             // width:"100%",
             // height: "100vh",
-            
+
             // zIndex: 9999,
 
 
             position: "fixed",
-inset: 0,
-display: "flex",
-alignItems: "center",
-justifyContent: "center",
-zIndex: 9999,
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 9999,
 
         }}
     >
