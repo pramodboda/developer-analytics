@@ -1,29 +1,18 @@
 import Box from "@mui/material/Box";
 
-import "./PageLoader.css";
+import "./Loader.css";
 
 
 export default function PageLoader() {
     return (<Box
         sx={{
-            // position: "absolute",
-            // inset: 0,
-            // display: "flex",
-            // alignItems: "center",
-            // justifyContent: "center",
-            // width:"100%",
-            // height: "100vh",
-
-            // zIndex: 9999,
-
-
             position: "fixed",
             inset: 0,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             zIndex: 9999,
-
+            backgroundColor: "rgba(225,225,225,0.5)"
         }}
     >
         <span className="loader"></span>
