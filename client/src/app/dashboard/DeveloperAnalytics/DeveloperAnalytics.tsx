@@ -120,10 +120,10 @@ export default function DeveloperAnalytics(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box component="main" sx={{ position:"relative", p: 3 }}>
         <Toolbar />
-
-        <Outlet />
+        <Box sx={{ position:"relative", border: "1px solid red"}}><Outlet /></Box>
+        
       </Box>
     </Box>
   );
