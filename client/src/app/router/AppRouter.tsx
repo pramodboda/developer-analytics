@@ -105,8 +105,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                // element: <HomePage />,
-                element: <PageLoader />,
+                element: <HomePage />,
+                // element: <PageLoader />,
             },
             {
                 path: "tech",

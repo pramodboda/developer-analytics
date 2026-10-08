@@ -126,7 +126,8 @@ export default function DeveloperAnalytics(props: Props) {
           position: "relative",
           flexGrow: 1,
           minHeight: "100vh",
-          p: 3,
+          px: 2,
+          py: 3,
         }}
       >
         <Toolbar />
