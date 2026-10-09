@@ -1,4 +1,4 @@
-const ITCompanies = [
+export const IT_Companies = [
     {id:1, level:1, company_name:"MircoSoft", type:"product"},
     {id:2, level:1, company_name:"Google", type:"product"},
     {id:3, level:1, company_name:"Salesforce", type:"product"},
