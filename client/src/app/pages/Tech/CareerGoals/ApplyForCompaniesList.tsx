@@ -8,7 +8,7 @@ export default function ApplyForCompaniesList(){
     return (
         <DataCard>
             <Typography variant="h6">Level 1</Typography>
-            <ul>{IT_Companies.filter((company) => level===1).map((company) => <li>{company.company_name}</li>)}</ul>
+            <ul>{IT_Companies.filter((company) => company.level===1).map((company) => <li>{company.company_name}</li>)}</ul>
             </DataCard>
     )
 }
