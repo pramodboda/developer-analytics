@@ -41,9 +41,6 @@ export default function ApplyForCompaniesList() {
                 <li>Work arrangement: hybrid or remote if possible; verify whether onsite attendance is mandatory.</li>
                 <li>Role level: the responsibilities match your demonstrated engineering ability, not simply your total years of IT experience.</li>
             </ol>
-
-
-
         </DataCard>
     )
 }
