@@ -6,7 +6,7 @@ import LearningProgression from "./LearningProgression";
 import InterviewPrepPlan from "./InterviewPrepPlan";
 import InterviewKitTracker from "./InterviewKitTracker";
 import ApplyForCompaniesList from "./ApplyForCompaniesList";
-import ExitChecklist from "./ExitChecklist";
+import CompanyExitChecklist from "./CompanyExitChecklist";
 
 export default function CareerGoalsPage() {
     return (<>
@@ -16,7 +16,7 @@ export default function CareerGoalsPage() {
         <Grid size={12}><InterviewKitTracker/></Grid>
 
         <Grid size={6}><ApplyForCompaniesList/></Grid>
-        <Grid size={6}><ExitChecklist/></Grid>
+        <Grid size={6}><CompanyExitChecklist/></Grid>
         
     </Grid></>)
 }
