@@ -56,8 +56,8 @@ export default function PortfolioProjectsTracker() {
                 {row.project_name}
               </TableCell>
 
-              <TableCell align="center" sx={{ minWidth: 40 }}>
-                <Stack >
+              <TableCell align="center" sx={{ width: "30px" }}>
+                <Stack sx={{flexDirection:"column"}}>
                   <LinearProgress
                     variant="determinate"
                     value={Math.min(100, Math.max(0, row.progress))}
