@@ -14,8 +14,6 @@ import {portfolioProjects} from "../../../data/portfolioProjects";
 const rows = portfolioProjects;
 
 
-
-
 export default function PortfolioProjectsTracker() {
   return (
     <TableContainer component={Paper}>
@@ -30,16 +28,14 @@ export default function PortfolioProjectsTracker() {
         <TableBody>
           {rows.map((row) => (
             <TableRow
-              key={row.name}
+              key={row.project_name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.name}
+              {row.project_name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right">{row.progress}</TableCell>
+              <TableCell align="right">{row.completed_status}</TableCell>
             </TableRow>
           ))}
         </TableBody>

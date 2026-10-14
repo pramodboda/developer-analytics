@@ -8,6 +8,9 @@ import InterviewKitTracker from "./InterviewKitTracker";
 import ApplyForCompaniesList from "./ApplyForCompaniesList";
 import CompanyExitChecklist from "./CompanyExitChecklist";
 
+import PortfolioProjectsTracker from "./PortfolioProjectsTracker";
+
+
 export default function CareerGoalsPage() {
     return (<>
     <Grid container spacing={2}>
@@ -17,6 +20,8 @@ export default function CareerGoalsPage() {
 
         <Grid size={6}><ApplyForCompaniesList/></Grid>
         <Grid size={6}><CompanyExitChecklist/></Grid>
+
+        <Grid size={6}><PortfolioProjectsTracker/></Grid>
         
     </Grid></>)
 }
