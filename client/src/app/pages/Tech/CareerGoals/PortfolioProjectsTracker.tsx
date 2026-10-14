@@ -7,7 +7,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import {portfolioProjects} from "../../../data/portfolioProjects";
+import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
+
+import { portfolioProjects } from "../../../data/portfolioProjects";
 
 
 
@@ -32,9 +34,9 @@ export default function PortfolioProjectsTracker() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-              {row.project_name}
+                {row.project_name}
               </TableCell>
-              <TableCell align="right">{row.progress}</TableCell>
+              <TableCell align="right"><LinearProgress value={row.progress} /></TableCell>
               <TableCell align="right">{row.completed_status}</TableCell>
             </TableRow>
           ))}
