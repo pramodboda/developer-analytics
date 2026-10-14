@@ -11,6 +11,11 @@ export const portfolioProjects = [
         completed_status: "Yet to start"
     },
     {
+        project_name: "ai-sql-analyst",
+        progress: 0,
+        completed_status: "Yet to start"
+    },
+    {
         project_name: "collaborative-whiteboard",
         progress: 100,
         completed_status: "completed"
@@ -29,7 +34,7 @@ export const portfolioProjects = [
     },
 
     {
-        // Remove video backgrounds, add nice blurry climate backgrounds  and make is as completed
+        // Remove video backgrounds, add nice blurry climate backgrounds, add only important animation icons and make is as completed
         project_name: "weather-app",
         progress: 80,
         completed_status: "all most completed"
