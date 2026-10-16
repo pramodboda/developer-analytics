@@ -6,6 +6,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+import Typography from '@mui/material/Typography';
+
 
 
 
@@ -14,7 +16,9 @@ import { bestAndWorstMonthsToSwitchJobsHyderabadIT } from "../../data/bestAndWor
 const row  = bestAndWorstMonthsToSwitchJobsHyderabadIT;
 
 export default function BestAndWorstMonthsToSwitchJobs() {
-    return (<> <TableContainer component={Paper}>
+    return (<> 
+    <Typography varaint={h6}>Best And Worst Months To Switch Jobs in Hyderabad IT</Typography>
+    <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table" size="small">
             <TableHead>
                 <TableRow>
