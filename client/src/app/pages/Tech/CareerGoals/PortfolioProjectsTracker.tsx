@@ -58,8 +58,8 @@ export default function PortfolioProjectsTracker() {
 
               <TableCell align="center" sx={{ width: "30px" }}>
                 <Stack direction="row"
-    alignItems="center"
-    spacing={1}>
+                  alignItems="center"
+                  spacing={1}>
                   <LinearProgress
                     variant="determinate"
                     value={Math.min(100, Math.max(0, row.progress))}
