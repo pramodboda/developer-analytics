@@ -1,4 +1,4 @@
-const bestAndWorstMonthsToSwitchJobsIndiaIT = [
+export const bestAndWorstMonthsToSwitchJobsIndiaIT = [
     { month: "January", fiveStarRating: 4, desc: "Hiring can pick up as companies resume recruitment and activate new hiring plans." },
     { month: "February", fiveStarRating: 4, desc: "A potentially good period for interviews and filling approved vacancies before financial year-end." },
     { month: "March", fiveStarRating: 3, desc: "Some companies finalize budgets and hiring plans, while others delay recruitment decisions." },
@@ -13,7 +13,7 @@ const bestAndWorstMonthsToSwitchJobsIndiaIT = [
     { month: "December", fiveStarRating: 2, desc: "Holiday schedules and year-end planning can delay interviews and joining decisions." }
   ];
 
-  const bestAndWorstMonthsToSwitchJobsHyderabadIT = [
+  export const bestAndWorstMonthsToSwitchJobsHyderabadIT = [
     { month: "January", fiveStarRating: 4, desc: "Hyderabad's overall hiring grew 10% year over year in January 2026, supporting a positive start to the year." },
     { month: "February", fiveStarRating: 4, desc: "A potentially good period to pursue new openings as recruitment continues after the start of the year." },
     { month: "March", fiveStarRating: 3, desc: "Recruitment can vary as companies finalize financial-year budgets and staffing requirements." },

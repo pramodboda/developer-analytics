@@ -9,7 +9,7 @@ import ApplyForCompaniesList from "./ApplyForCompaniesList";
 import CompanyExitChecklist from "./CompanyExitChecklist";
 
 import PortfolioProjectsTracker from "./PortfolioProjectsTracker";
-
+import BestAndWorstMonthsToSwitchJobs from "./BestAndWorstMonthsToSwitchJobs";
 
 export default function CareerGoalsPage() {
     return (<>
@@ -22,6 +22,7 @@ export default function CareerGoalsPage() {
         <Grid size={6}><CompanyExitChecklist/></Grid>
 
         <Grid size={6}><PortfolioProjectsTracker/></Grid>
+        <Grid size={6}><BestAndWorstMonthsToSwitchJobs/></Grid>
         
     </Grid></>)
 }

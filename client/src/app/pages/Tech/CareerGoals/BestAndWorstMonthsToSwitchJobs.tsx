@@ -11,13 +11,14 @@ import Typography from '@mui/material/Typography';
 
 
 
-import { bestAndWorstMonthsToSwitchJobsHyderabadIT } from "../../data/bestAndWorstMonthsToSwitchJobs"
+import { bestAndWorstMonthsToSwitchJobsHyderabadIT } from "../../../data/bestAndWorstMonthsToSwitchJobs"
 
-const row  = bestAndWorstMonthsToSwitchJobsHyderabadIT;
+
 
 export default function BestAndWorstMonthsToSwitchJobs() {
+    const rows = bestAndWorstMonthsToSwitchJobsHyderabadIT;
     return (<> 
-    <Typography varaint={h6}>Best And Worst Months To Switch Jobs in Hyderabad IT</Typography>
+    <Typography varaint="h6">Best And Worst Months To Switch Jobs in Hyderabad IT</Typography>
     <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table" size="small">
             <TableHead>
